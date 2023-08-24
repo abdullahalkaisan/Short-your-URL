@@ -8,39 +8,6 @@ form.addEventListener("submit", (e)=>{
 
     const longLink = input.value;
 
-
-
-
-    function validateURL(longLink) {
-        // Regular expression to match a valid URL.
-        const regex = /^(https?:\/\/)?[a-zA-Z0-9-_\.]+\.[a-zA-Z]{2,}$/;
-      
-        // Check if the URL matches the regular expression.
-        if (regex.test(longLink)) {
-          return true;
-        } else {
-          return false;
-        }
-      }
-      
-      // Get the URL from the user.
-    //   const url = prompt("Enter a URL:");
-      
-      // Validate the URL.
-      const isValid = validateURL(longLink);
-      
-      // Display an alert if the URL is valid.
-      if (isValid) {
-        alert("The URL is valid.");
-      } else {
-        alert("The URL is not valid.");
-      }
-
-
-
-
-    console.log(longLink);
-
     const loadApiData = async()=>{
 
 
