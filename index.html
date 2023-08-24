@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+<body class="flex flex-col  h-screen items-center justify-center">
+
+    <h1 class="text-5xl font-bold">Short your URL</h1>
+    <a href="https://github.com/abdullahalkaisan" target="_blank" class="py-6">@Kaisan</a>
+
+    <form class=" w-full my-5">
+        <div class="flex justify-center items-center m-2">
+            <input type="text" placeholder="Input your URL" class="input input-bordered w-full max-w-xs" />
+            <button type="submit" class="btn mx-2 btn-active btn-neutral">Short</button>
+        </div>
+    </form>
+
+    <div id="linkArea" class="stats flex flex-col hidden">
+        <div class="stat flex flex-col items-center spacing">
+          <div class="stat-title">Your short link for <span id="providedLink" class="text-sky-600">https://www.google.com</span> </div>
+          <div id="shortLinkShow" class="stat-value my-5">short.iokjasdf</div>
+          <button type="submit" id="copyBtn" class="btn mx-2 btn-active btn-neutral rounded-full">Copy  link</button>
+        </div>
+
+    </div>
+
+
+    <div id="toast" class="toast toast-start hidden">
+        <div class="alert alert-dark bg-gray-900 text-white">
+          <span>Link copied</span>
+        </div>
+      </div>
+
+      <lottie-player id="lottiAnimation" class="hidden" src="https://lottie.host/40037eaa-a79c-47f3-a1e2-b818f8bbb8a1/rGm8XPj7po.json" background="#FFFFFF" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
